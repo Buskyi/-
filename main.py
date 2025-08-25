@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 # 设置 Edge WebDriver 路径
-edge_driver_path = r'D:\edgedriver_win64\msedgedriver.exe'
+edge_driver_path = r'D:\edgedriver_win64\msedgedriver.exe' # 这里填入自己的Edge驱动程序路径
 
 # 启动 Edge 浏览器
 service = Service(edge_driver_path)
@@ -23,17 +23,11 @@ driver.get('https://www.wjx.cn/vm/h4Ck0yh.aspx#')
 MAX_WAIT_TIME = 3600 # 这里设置运行时长
 REFRESH_INTERVAL = 0 # 这里设置刷新间隔
 
-# YOUR_NAME = '卜清音'
-# # YOUR_QQ = '3521298875'
-# YOUR_ID = '2023110319'
-# YOUR_NUMBER = '19966521327'
-# YOUR_GENDER = '女'  # 或 '女'
-
-YOUR_NAME = '王倩'
-# YOUR_QQ = '3521298875'
-YOUR_ID = '2023110357'
-YOUR_NUMBER = '18851898805'
-YOUR_GENDER = '女'  # 或 '女'
+YOUR_NAME = 'aaa' # 这里填入姓名
+YOUR_QQ = '111' # 这里填入QQ号
+YOUR_ID = '111' # 这里填入学号
+YOUR_NUMBER = '111' # 这里填入电话
+YOUR_GENDER = '男'  # 这里填入性别，或 '女'
 
 # 记录时间
 start_time = time.time()
@@ -112,4 +106,5 @@ except Exception as e:
 finally:
     time.sleep(10000)
     driver.quit()
+
     print("浏览器已关闭")
